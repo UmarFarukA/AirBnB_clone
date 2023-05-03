@@ -15,23 +15,27 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1676586459,,"wq"
+|2,0,1683027751,,"wq"
 :set number
-|2,0,1676586277,,"set number"
+|2,0,1683027016,,"set number"
+:Wq
+|2,0,1682940643,,"Wq"
+:q!
+|2,0,1682876669,,"q!"
+:w
+|2,0,1682777560,,"w"
+:set nummber
+|2,0,1682264638,,"set nummber"
+:wqwq
+|2,0,1678983787,,"wqwq"
 :set number 
 |2,0,1676497695,,"set number "
 :WQ
 |2,0,1676492519,,"WQ"
-:q!
-|2,0,1676414936,,"q!"
-:wqwq
-|2,0,1674742814,,"wqwq"
-:Wq
-|2,0,1673606098,,"Wq"
 
 # Search String History (newest to oldest):
 ? @$
-|2,1,1674576990,,"@$"
+|2,1,1682796730,,"@$"
 
 # Expression History (newest to oldest):
 
@@ -40,1000 +44,1768 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	
-|3,0,0,1,1,0,1674576990,""
-""1	LINE	0
-	
-|3,1,1,1,1,0,1676581615,""
+"0	CHAR	0
+	# app_views Blueprint from app.v1.views
+	app.register_blueprint(app_views)
+|3,0,0,0,2,0,1682876770,"# app_views Blueprint from app.v1.views","app.register_blueprint(app_views)"
+"1	LINE	0
+	    
+|3,0,1,1,1,0,1682955600,"    "
 "2	LINE	0
-	CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
-|3,0,2,1,1,0,1676579991,"CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';"
+	    
+|3,0,2,1,1,0,1682955572,"    "
 "3	LINE	0
-	GRANT ALL ON *.* TO 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
-|3,0,3,1,1,0,1676579987,"GRANT ALL ON *.* TO 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';"
+	import models
+|3,0,3,1,1,0,1682940250,"import models"
 "4	LINE	0
-	\
-|3,0,4,1,1,0,1676500937,"\\"
+	from datetime import datetime
+|3,0,4,1,1,0,1682938573,"from datetime import datetime"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1676410037,""
+	from models import base_model, amenity, city, place, review, state, user
+|3,0,5,1,1,0,1682938572,"from models import base_model, amenity, city, place, review, state, user"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1675847674,""
+	from models import base_model, amenity, city, place, review, state, user
+|3,0,6,1,1,0,1682938440,"from models import base_model, amenity, city, place, review, state, user"
 "7	LINE	0
-	                                                                                                                                                                       
-|3,0,7,1,1,0,1674815935,"                                                                                                                                                                       "
+	from models.base_model import Base
+|3,0,7,1,1,0,1682938439,"from models.base_model import Base"
 "8	LINE	0
-	# Display "To infinity and beyond"
-|3,0,8,1,1,0,1674815697,"# Display \"To infinity and beyond\""
+	import os
+|3,0,8,1,1,0,1682938383,"import os"
 "9	LINE	0
-	done
-|3,0,9,1,1,0,1674815691,"done"
-"-	CHAR	0
-	 
-|3,0,36,0,1,0,1676579694," "
+	
+|3,0,9,1,1,0,1682938382,""
+""-	CHAR	0
+	=
+|3,1,36,0,1,0,1683019433,"="
 
 # File marks:
-'0  2  184  ~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql
-|4,48,2,184,1676586459,"~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql"
-'1  1  37  ~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql
-|4,49,1,37,1676586313,"~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql"
-'2  1  37  ~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql
-|4,50,1,37,1676586313,"~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql"
-'3  2  189  ~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql
-|4,51,2,189,1676584939,"~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql"
-'4  2  131  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,52,2,131,1676582689,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
-'5  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,53,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
-'6  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,54,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
-'7  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,55,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
-'8  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,56,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
-'9  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/1-create_user.sql
-|4,57,2,0,1676580021,"~/alx-higher_level_programming/0x0E-SQL_more_queries/1-create_user.sql"
+'0  1  16  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,48,1,16,1683027751,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+'1  1  0  ~/AirBnB_clone_v3/models/base_model.py
+|4,49,1,0,1683026257,"~/AirBnB_clone_v3/models/base_model.py"
+'2  127  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,50,127,26,1683022231,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+'3  127  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,51,127,26,1683022231,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+'4  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,52,106,26,1683019438,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+'5  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,53,106,26,1683019438,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+'6  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,54,106,26,1683019438,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+'7  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,55,106,26,1683019438,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+'8  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,56,31,45,1683019303,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+'9  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,57,31,45,1683019303,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
 
 # Jumplist (newest first):
--'  2  184  ~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql
-|4,39,2,184,1676586459,"~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql"
--'  1  37  ~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql
-|4,39,1,37,1676586403,"~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql"
--'  1  37  ~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql
-|4,39,1,37,1676586313,"~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql
-|4,39,2,0,1676586270,"~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql"
--'  2  189  ~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql
-|4,39,2,189,1676584939,"~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql"
--'  2  189  ~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql
-|4,39,2,189,1676584939,"~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql"
--'  2  189  ~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql
-|4,39,2,189,1676584939,"~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql"
--'  2  189  ~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql
-|4,39,2,189,1676584939,"~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql"
--'  1  49  ~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql
-|4,39,1,49,1676584771,"~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql"
--'  1  49  ~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql
-|4,39,1,49,1676584771,"~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql"
--'  1  49  ~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql
-|4,39,1,49,1676584771,"~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql"
--'  1  49  ~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql
-|4,39,1,49,1676584771,"~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql"
--'  2  131  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,2,131,1676582689,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  2  131  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,2,131,1676582689,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  2  131  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,2,131,1676582689,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  2  131  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,2,131,1676582689,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  2  131  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,2,131,1676582689,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  2  131  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,2,131,1676582689,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  2  131  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,2,131,1676582689,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  2  131  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,2,131,1676582689,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,1,0,1676582627,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,1,0,1676582627,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,1,0,1676582627,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,1,0,1676582627,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,1,0,1676582627,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,1,0,1676582627,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,1,0,1676582627,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-|4,39,1,0,1676582627,"~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  53  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,53,1676581946,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  122  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,122,1676581772,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  2  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,2,0,1676581593,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
--'  1  0  ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-|4,39,1,0,1676581558,"~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql"
+-'  1  16  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,1,16,1683027751,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  127  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,127,26,1683026354,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  1  0  ~/AirBnB_clone_v3/models/base_model.py
+|4,39,1,0,1683026257,"~/AirBnB_clone_v3/models/base_model.py"
+-'  1  0  ~/AirBnB_clone_v3/models/base_model.py
+|4,39,1,0,1683026257,"~/AirBnB_clone_v3/models/base_model.py"
+-'  127  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,127,26,1683022231,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  127  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,127,26,1683022231,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,106,26,1683021228,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,106,26,1683021228,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,106,26,1683021228,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,106,26,1683019438,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,106,26,1683019438,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,31,45,1683019368,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,31,45,1683019368,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,31,45,1683019368,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,31,45,1683019368,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,31,45,1683019368,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,31,45,1683019303,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,31,45,1683019303,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,37,20,1683019187,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,37,20,1683019187,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
 
 # History of marks within files (newest to oldest):
 
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/14-my_genres.sql
-	*	1676586458	0
-	"	2	184
-	^	2	185
-	.	2	18
-	+	1	37
-	+	2	114
-	+	2	18
+> ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
+	*	1683027749	0
+	"	1	16
+	^	106	27
+	.	106	26
+	+	146	0
+	+	37	19
+	+	37	20
+	+	31	45
+	+	106	26
 
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/13-count_shows_by_genre.sql
-	*	1676584937	0
-	"	2	189
-	^	2	190
-	.	2	189
-	+	1	48
-	+	1	49
-	+	2	189
+> ~/AirBnB_clone_v3/models/base_model.py
+	*	1683026255	0
+	"	1	0
 
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/12-no_genre.sql
-	*	1676582687	0
-	"	2	131
-	^	2	132
-	.	2	131
-	+	2	131
+> ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
+	*	1682979672	0
+	"	277	16
+	^	276	26
+	.	276	25
+	+	276	25
 
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/11-genre_id_all_shows.sql
-	*	1676581945	0
-	"	2	53
-	^	2	54
-	.	2	53
-	+	1	43
-	+	2	53
+> ~/AirBnB_clone_v3/tests/test_models/test_engine/test_db_storage.py
+	*	1682979665	0
+	"	462	16
+	^	462	17
+	.	462	16
+	+	460	0
+	+	462	16
 
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/1-create_user.sql
-	*	1676580020	0
-	"	2	0
-	.	2	0
-	+	2	66
+> ~/AirBnB_clone_v3/models/engine/__init__.py
+	*	1682977038	0
+	"	1	0
+
+> ~/AirBnB_clone_v3/models/engine/test_get_count.py
+	*	1682976717	0
+	"	11	66
+	^	11	67
+	.	11	66
+	+	11	66
+
+> ~/AirBnB_clone_v3/README.md
+	*	1682976158	0
+	"	163	0
+
+> ~/AirBnB_clone_v3/AUTHORS
+	*	1682976133	0
+	"	7	42
+	^	7	43
+	.	7	42
+	+	7	42
+
+> ~/AirBnB_clone_v3/models/engine/file_storage.py
+	*	1682955647	0
+	"	70	0
+	^	70	0
+	.	70	0
+	+	64	31
+	+	7	34
+	+	13	28
+	+	9	27
+	+	5	28
+	+	24	23
+	+	25	19
+	+	26	16
+	+	27	17
+	+	28	18
+	+	29	17
+	+	30	16
+	+	16	10
+	+	71	3
+	+	70	0
+
+> ~/AirBnB_clone_v3/models/engine/db_storage.py
+	*	1682955610	0
+	"	79	0
+	^	79	0
+	.	79	0
+	+	86	0
+	+	15	17
+	+	16	35
+	+	17	54
+	+	18	0
+	+	14	8
+	+	25	19
+	+	26	16
+	+	27	17
+	+	28	18
+	+	29	17
+	+	30	16
+	+	8	38
+	+	7	33
+	+	16	35
+	+	6	0
+	+	80	0
+	+	79	0
+
+> ~/AirBnB_clone_v3/api/v1/app.py
+	*	1682886875	0
+	"	20	23
+	^	29	0
+	.	28	0
+	+	31	15
+	+	8	44
+	+	16	58
+	+	2	3
+	+	3	38
+	+	41	7
+	+	42	53
+	+	42	74
+	+	40	26
+	+	43	39
+	+	32	7
+	+	34	20
+	+	31	21
+	+	55	62
+	+	53	9
+	+	73	0
+	+	58	28
+	+	64	45
+	+	65	40
+	+	64	37
+	+	72	0
+	+	81	0
+	+	48	10
+	+	39	10
+	+	84	24
+	+	7	26
+	+	6	72
+	+	7	0
+	+	9	0
+	+	8	0
+	+	10	45
+	+	13	27
+	+	16	30
+	+	16	38
+	+	18	34
+	+	22	34
+	+	82	24
+	+	18	0
+	+	16	0
+	+	22	0
+	+	24	0
+	+	27	0
+	+	16	34
+	+	18	0
+	+	28	0
+
+> ~/AirBnB_clone_v3/api/v1/views/__init__.py
+	*	1682876255	0
+	"	5	32
+	^	5	33
+	.	5	32
+	+	4	31
+	+	7	31
+	+	7	34
+	+	7	30
+	+	9	31
+	+	10	38
+	+	4	25
+	+	7	25
+	+	9	25
+	+	10	26
 	+	2	65
-	+	2	0
-	+	1	38
-	+	2	49
-	+	2	27
-	+	2	54
-	+	2	0
+	+	10	0
+	+	4	22
+	+	7	23
+	+	7	22
+	+	9	32
+	+	10	27
+	+	4	23
+	+	6	35
+	+	7	32
+	+	8	32
+	+	10	0
+	+	7	0
+	+	5	32
 
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/2-create_read_user.sql
-	*	1676579523	0
-	"	4	86
-	^	4	87
+> ~/AirBnB_clone_v3/api/v1/__init__.py
+	*	1682875936	0
+	"	1	0
+
+> ~/AirBnB_clone_v3/api/__init__.py
+	*	1682875886	0
+	"	1	0
+
+> ~/AirBnB_clone_v3/api/v1/views/index.py
+	*	1682874621	0
+	"	16	18
+	^	16	19
+	.	16	19
+	+	2	44
+	+	16	19
+
+> ~/AirBnB_clone_v3/api/v1/views/places_reviews.py
+	*	1682777630	0
+	"	50	51
+	^	77	45
+	.	50	51
+	+	45	49
+	+	77	22
+	+	76	14
+	+	77	44
+	+	50	51
+
+> ~/AirBnB_clone_v3/api/v1/views/places.py
+	*	1682775460	0
+	"	23	41
+	^	75	13
+	.	23	41
+	+	2	53
+	+	8	24
+	+	11	14
+	+	13	30
+	+	14	30
+	+	16	9
+	+	24	27
+	+	33	78
+	+	33	81
+	+	8	35
+	+	16	23
+	+	9	17
+	+	16	7
+	+	20	89
+	+	24	26
+	+	16	39
+	+	24	0
+	+	17	0
+	+	21	36
+	+	17	0
+	+	19	0
+	+	18	30
+	+	21	37
+	+	23	51
+	+	9	25
+	+	33	43
+	+	38	37
+	+	44	0
+	+	43	47
+	+	46	29
+	+	47	9
+	+	49	21
+	+	53	22
+	+	55	29
+	+	57	8
+	+	59	12
+	+	63	27
+	+	66	12
+	+	67	16
+	+	74	12
+	+	23	41
+
+> ~/AirBnB_clone_v3/api/v1/views/users.py
+	*	1682773594	0
+	"	63	42
+	^	63	43
+	.	63	42
+	+	19	38
+	+	16	8
+	+	31	46
+	+	22	19
+	+	23	22
+	+	25	22
+	+	27	22
+	+	9	8
+	+	63	42
+
+> ~/AirBnB_clone_v3/api/v1/views/amenities.py
+	*	1682773023	0
+	"	9	12
+	^	9	13
+	.	9	12
+	+	8	26
+	+	28	40
+	+	10	34
+	+	12	16
+	+	13	71
+	+	14	38
+	+	15	0
+	+	22	14
+	+	23	32
+	+	24	18
+	+	25	33
+	+	22	33
+	+	31	15
+	+	33	14
+	+	35	33
+	+	37	28
+	+	39	10
+	+	40	13
+	+	43	29
+	+	45	14
+	+	46	18
+	+	52	14
+	+	53	29
+	+	29	16
+	+	9	12
+
+> ~/AirBnB_clone_v3/api/v1/views/cities.py
+	*	1682772967	0
+	"	9	9
+	^	9	10
+	.	9	9
+	+	24	29
+	+	23	43
+	+	36	46
+	+	18	30
+	+	23	35
+	+	18	9
+	+	23	69
+	+	24	28
+	+	25	0
+	+	22	4
+	+	44	36
+	+	41	41
+	+	47	29
+	+	46	41
+	+	50	39
+	+	54	31
+	+	67	42
+	+	53	0
+	+	22	0
+	+	21	0
+	+	8	18
+	+	39	18
+	+	40	13
+	+	9	9
+
+> ~/AirBnB_clone_v3/api/v1/views/states.py
+	*	1682772925	0
+	"	45	9
+	^	45	10
+	.	9	9
+	+	23	51
+	+	5	30
+	+	41	46
+	+	41	0
+	+	37	3
+	+	39	17
+	+	41	0
+	+	41	38
+	+	39	29
+	+	26	69
+	+	45	25
+	+	28	50
+	+	29	37
+	+	35	4
+	+	29	35
+	+	34	16
+	+	33	39
+	+	34	27
+	+	14	0
+	+	15	0
+	+	53	0
+	+	53	15
+	+	53	0
+	+	52	38
+	+	53	0
+	+	27	76
+	+	36	32
+	+	52	43
+	+	27	17
+	+	8	18
+	+	9	9
+
+> ~/alx-higher_level_programming/0x14-javascript-web_scraping/100-starwars_characters.js
+	*	1682452611	0
+	"	3	53
+	^	3	54
+	.	3	54
+	+	13	0
+	+	12	8
+	+	9	16
+	+	8	36
+	+	3	59
+	+	4	7
+	+	3	40
+	+	6	35
+	+	4	45
+	+	7	0
+	+	6	3
+	+	7	3
+	+	8	3
+	+	9	3
+	+	10	5
+	+	11	4
+	+	12	3
+	+	11	5
+	+	10	7
+	+	9	5
+	+	13	5
+	+	14	2
+	+	13	3
+	+	8	5
+	+	9	7
+	+	10	9
+	+	11	7
+	+	12	5
+	+	4	10
+	+	8	16
+	+	3	54
+
+> ~/alx-higher_level_programming/0x14-javascript-web_scraping/6-completed_tasks.js
+	*	1682441725	0
+	"	7	8
+	^	7	9
+	.	7	8
+	+	17	0
+	+	8	27
+	+	9	3
+	+	7	25
+	+	11	12
+	+	12	37
+	+	15	29
+	+	12	19
+	+	6	20
+	+	5	12
+	+	16	2
+	+	15	3
+	+	14	3
+	+	13	5
+	+	12	7
+	+	11	5
+	+	10	7
+	+	9	5
+	+	8	3
+	+	7	3
+	+	6	3
+	+	10	27
+	+	11	31
+	+	7	8
+
+> ~/alx-higher_level_programming/0x14-javascript-web_scraping/5-request_store.js
+	*	1682440160	0
+	"	4	0
+	^	4	73
 	.	5	0
-	+	2	31
-	+	2	55
-	+	3	89
-	+	3	48
-	+	3	100
-	+	3	65
-	+	1	41
-	+	2	15
-	+	3	49
-	+	4	29
-	+	4	56
+	+	3	24
+	+	4	103
+	+	4	28
+	+	4	65
+	+	4	66
+	+	4	72
 	+	5	0
 
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/10-genre_id_by_show.sql
-	*	1676501262	0
-	"	1	45
-	^	1	46
-	.	1	45
-	+	1	45
+> ~/alx-higher_level_programming/0x14-javascript-web_scraping/4-starwars_count.js
+	*	1682438914	0
+	"	10	24
+	^	10	25
+	.	10	24
+	+	6	35
+	+	12	0
+	+	6	37
+	+	11	2
+	+	9	4
+	+	8	76
+	+	7	18
+	+	6	43
+	+	10	24
 
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/0-privileges.sql
-	*	1676500535	0
-	"	3	10
-	^	3	11
-	.	3	10
+> ~/alx-higher_level_programming/0x14-javascript-web_scraping/3-starwars_title.js
+	*	1682434260	0
+	"	5	20
+	^	5	21
+	.	5	20
+	+	4	73
+	+	5	30
+	+	4	73
 	+	2	35
-	+	3	15
-	+	2	10
-	+	3	10
+	+	3	73
+	+	4	46
+	+	5	20
 
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/6-states.sql
-	*	1676499609	0
-	"	4	49
-	^	3	39
-	.	4	49
-	+	1	55
-	+	4	54
-	+	6	2
-	+	3	38
-	+	4	49
-
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/7-cities.sql
-	*	1676499488	0
-	"	3	38
-	^	3	39
-	.	3	38
-	+	9	2
-	+	6	29
-	+	7	24
-	+	8	35
-	+	4	40
-	+	3	38
-
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/9-cities_by_state_join.sql
-	*	1676498885	0
-	"	2	99
-	^	2	100
-	.	2	99
-	+	1	43
-	+	2	99
-
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/8-cities_of_california_subquery.sql
-	*	1676497647	0
-	"	2	107
-	^	2	108
-	.	2	107
-	+	2	107
-
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/5-unique_id.sql
-	*	1676494307	0
-	"	5	2
-	^	5	3
-	.	5	2
-	+	5	2
-
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/4-never_empty.sql
-	*	1676494010	0
-	"	5	2
-	^	5	3
-	.	5	2
-	+	5	2
-
-> ~/alx-higher_level_programming/0x0E-SQL_more_queries/3-force_name.sql
-	*	1676493751	0
-	"	5	2
-	^	5	3
-	.	5	2
-	+	5	2
-
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/103-max_state.sql
-	*	1676415428	0
-	"	2	84
-	^	2	85
-	.	2	84
-	+	2	84
-
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/102-top_city.sql
-	*	1676415198	0
-	"	2	71
-	^	2	72
-	.	2	71
-	+	2	71
-
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/101-avg_temperatures.sql
-	*	1676414811	0
-	"	2	45
-	^	2	46
-	.	2	45
-	+	2	45
-
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/9-full_creation.sql
-	*	1676413782	0
-	"	2	28
-	^	2	29
-	.	6	28
-	+	3	12
-	+	3	42
-	+	3	113
-	+	2	106
-	+	1	15
-	+	2	62
-	+	2	90
-	+	3	41
-	+	3	49
-	+	3	65
-	+	3	80
-	+	3	64
-	+	4	63
-	+	5	63
-	+	6	47
-	+	2	62
-	+	2	93
-	+	2	104
-	+	2	96
-	+	3	36
-	+	4	36
-	+	6	36
-	+	3	45
-	+	4	25
-	+	5	45
-	+	6	28
-
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/15-groups.sql
-	*	1676412936	0
-	"	2	12
-	^	2	13
-	.	2	12
-	+	2	92
-	+	2	12
-
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/16-no_link.sql
-	*	1676411646	0
-	"	2	59
-	^	2	60
-	.	2	59
-	+	2	59
-
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/14-average.sql
-	*	1676410063	0
-	"	2	36
-	^	2	37
-	.	2	36
-	+	2	48
+> ~/alx-higher_level_programming/0x14-javascript-web_scraping/2-statuscode.js
+	*	1682432831	0
+	"	3	61
+	^	3	62
+	.	3	61
+	+	4	43
+	+	3	72
+	+	4	0
 	+	3	0
-	+	2	36
+	+	4	1
+	+	5	2
+	+	4	30
+	+	3	61
 
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/13-change_class.sql
-	*	1676409793	0
-	"	2	43
-	^	2	44
-	.	2	43
-	+	2	43
+> ~/alx-higher_level_programming/0x14-javascript-web_scraping/1-writeme.js
+	*	1682431761	0
+	"	6	2
+	^	6	3
+	.	6	2
+	+	7	2
+	+	5	21
+	+	6	2
 
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/12-no_cheating.sql
-	*	1676409554	0
-	"	2	55
-	^	2	56
-	.	2	55
-	+	2	55
+> ~/alx-higher_level_programming/0x14-javascript-web_scraping/0-readme.js
+	*	1682431231	0
+	"	3	57
+	^	3	58
+	.	3	57
+	+	3	59
+	+	5	2
+	+	3	85
+	+	3	46
+	+	2	19
+	+	4	1
+	+	3	25
+	+	4	16
+	+	3	57
 
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/11-best_score.sql
-	*	1676409324	0
-	"	2	76
-	^	2	77
-	.	2	76
-	+	2	76
+> ~/alx-system_engineering-devops/0x15-api/3-dictionary_of_list_of_dictionaries.py
+	*	1682357801	0
+	"	16	12
+	.	16	0
+	+	9	0
+	+	17	0
+	+	12	32
+	+	12	42
+	+	16	42
+	+	11	0
+	+	17	11
+	+	11	39
+	+	10	44
+	+	15	47
+	+	16	32
+	+	18	32
+	+	19	32
+	+	14	0
+	+	16	0
 
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/10-top_score.sql
-	*	1676409169	0
-	"	2	58
-	^	2	59
-	.	2	58
-	+	2	58
+> ~/alx-system_engineering-devops/0x15-api/2-export_to_JSON.py
+	*	1682356464	0
+	"	15	35
+	^	15	36
+	.	15	35
+	+	9	8
+	+	12	8
+	+	11	52
+	+	13	63
+	+	15	61
+	+	16	29
+	+	16	17
+	+	16	0
+	+	15	52
+	+	18	74
+	+	3	10
+	+	9	9
+	+	11	53
+	+	13	63
+	+	15	35
 
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/8-count_89.sql
-	*	1676408203	0
-	"	2	48
-	^	2	49
-	.	2	48
-	+	2	48
+> ~/alx-system_engineering-devops/0x15-api/1-export_to_CSV.py
+	*	1682355212	0
+	"	9	4
+	^	19	26
+	.	9	0
+	+	3	10
+	+	8	26
+	+	8	75
+	+	8	50
+	+	8	59
+	+	8	90
+	+	2	40
+	+	8	59
+	+	8	115
+	+	8	128
+	+	8	118
+	+	8	70
+	+	8	98
+	+	3	0
+	+	4	14
+	+	8	59
+	+	8	38
+	+	4	0
+	+	5	9
+	+	8	59
+	+	8	4
+	+	8	12
+	+	8	117
+	+	8	62
+	+	8	4
+	+	8	27
+	+	8	47
+	+	8	62
+	+	8	39
+	+	8	28
+	+	8	4
+	+	8	70
+	+	8	29
+	+	8	4
+	+	8	29
+	+	8	33
+	+	8	0
+	+	19	25
+	+	9	0
 
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/7-insert_value.sql
-	*	1676407799	0
-	"	2	59
-	^	2	60
-	.	2	59
-	+	2	59
+> ~/alx-system_engineering-devops/0x15-api/0-gather_data_from_an_API.py
+	*	1682346704	0
+	"	17	32
+	^	17	33
+	.	17	32
+	+	6	0
+	+	16	146
+	+	8	91
+	+	9	99
+	+	12	28
+	+	13	17
+	+	15	72
+	+	15	55
+	+	17	47
+	+	15	105
+	+	15	46
+	+	17	41
+	+	1	17
+	+	8	48
+	+	10	56
+	+	11	34
+	+	11	4
+	+	11	34
+	+	13	4
+	+	13	27
+	+	13	24
+	+	13	4
+	+	13	20
+	+	15	26
+	+	13	17
+	+	15	0
+	+	15	26
+	+	15	4
+	+	16	62
+	+	17	41
+	+	17	30
+	+	11	0
+	+	15	41
+	+	9	10
+	+	10	11
+	+	11	43
+	+	12	37
+	+	13	0
+	+	11	8
+	+	12	7
+	+	13	68
+	+	15	0
+	+	16	60
+	+	17	29
+	+	17	38
+	+	11	64
+	+	10	28
+	+	11	41
+	+	13	52
+	+	14	16
+	+	8	47
+	+	9	21
+	+	10	22
+	+	17	32
 
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/5-full_table.sql
-	*	1676407149	0
+> ~/AirBnB_clone_v2/web_flask/100-hbnb.py
+	*	1682267096	0
+	"	5	19
+	^	5	20
+	.	5	19
+	+	31	36
+	+	19	32
+	+	21	75
+	+	16	42
+	+	14	16
+	+	15	7
+	+	5	19
+
+> ~/AirBnB_clone_v2/web_flask/9-states.py
+	*	1682266438	0
+	"	7	2
+	^	7	3
+	.	7	2
+	+	30	0
+	+	29	43
+	+	35	18
+	+	24	17
+	+	39	49
+	+	14	0
+	+	23	46
+	+	16	11
+	+	23	24
+	+	24	9
+	+	8	0
+	+	7	2
+
+> ~/AirBnB_clone_v2/web_flask/templates/9-states.html
+	*	1682265948	0
+	"	1	0
+
+> ~/AirBnB_clone_v2/web_flask/templates/8-cities_by_states.html
+	*	1682265730	0
+	"	11	23
+	^	8	23
+	.	11	23
+	+	17	0
+	+	14	0
+	+	13	0
+	+	9	0
+	+	8	56
+	+	16	12
+	+	17	0
+	+	9	35
+	+	11	56
+	+	13	14
+	+	12	35
+	+	15	10
+	+	9	3
+	+	11	52
+	+	8	22
+	+	11	23
+
+> ~/AirBnB_clone_v2/web_flask/8-cities_by_states.py
+	*	1682265174	0
+	"	29	25
+	^	29	26
+	.	29	26
+	+	25	18
+	+	18	3
+	+	17	47
+	+	19	67
+	+	29	49
+	+	13	0
+	+	23	15
+	+	6	0
+	+	15	51
+	+	16	19
+	+	29	26
+
+> ~/AirBnB_clone_v2/models/state.py
+	*	1682259666	0
+	"	21	7
+	^	21	8
+	.	21	0
+	+	5	36
+	+	10	18
+	+	11	15
+	+	13	35
+	+	16	27
+	+	17	45
+	+	4	33
+	+	9	26
+	+	6	38
+	+	18	67
+	+	13	36
+	+	14	23
+	+	13	42
+	+	14	47
+	+	20	3
+	+	21	0
+
+> ~/AirBnB_clone_v2/console.py
+	*	1682259402	0
+	"	237	0
+
+> ~/AirBnB_clone_v2/web_flask/templates/7-states_list.html
+	*	1682259349	0
+	"	8	11
+	^	8	12
+	.	9	36
+	+	11	0
+	+	13	0
+	+	12	8
+	+	9	29
+	+	10	39
+	+	9	58
+	+	11	16
+	+	9	36
+
+> ~/AirBnB_clone_v2/web_flask/7-states_list.py
+	*	1682259164	0
+	"	16	0
+	^	24	14
+	.	14	31
+	+	11	46
+	+	5	26
+	+	21	18
+	+	16	3
+	+	15	63
+	+	14	9
+	+	20	37
+	+	25	49
+	+	14	32
+	+	15	56
+	+	3	0
+	+	9	0
+	+	16	0
+	+	19	15
+	+	24	13
+	+	14	31
+
+> ~/AirBnB_clone_v2/web_flask/6-number_odd_or_even.py
+	*	1682246509	0
+	"	60	41
+	^	60	42
+	.	2	41
+	+	50	63
+	+	57	0
+	+	19	16
+	+	13	23
+	+	3	0
+	+	2	41
+
+> ~/AirBnB_clone_v2/web_flask/5-number_template.py
+	*	1682246415	0
+	"	50	49
+	^	50	50
+	.	51	0
+	+	4	32
+	+	39	44
+	+	43	60
+	+	46	53
+	+	47	0
+	+	45	49
+	+	13	23
+	+	19	16
+	+	37	24
+	+	39	45
+	+	46	45
+	+	3	0
+	+	2	41
+	+	51	0
+
+> ~/AirBnB_clone_v2/web_flask/templates/5-number.html
+	*	1682246258	0
+	"	5	10
+	^	7	21
+	.	7	20
+	+	7	20
+
+> ~/AirBnB_clone_v2/web_flask/4-number_route.py
+	*	1682245914	0
+	"	43	3
+	^	43	4
+	.	42	44
+	+	45	0
+	+	42	43
+	+	22	11
+	+	16	23
+	+	40	24
+	+	42	44
+
+> ~/AirBnB_clone_v2/web_flask/3-python_route.py
+	*	1682245600	0
+	"	16	23
+	^	16	24
+	.	16	23
+	+	23	0
+	+	40	0
+	+	35	33
+	+	40	0
+	+	38	0
+	+	32	42
+	+	22	11
+	+	16	23
+
+> ~/AirBnB_clone_v2/web_flask/2-c_route.py
+	*	1682245496	0
+	"	16	23
+	^	16	24
+	.	16	23
+	+	1	18
+	+	29	29
+	+	24	0
+	+	22	16
+	+	16	23
+
+> ~/AirBnB_clone_v2/web_flask/1-hbnb_route.py
+	*	1682245367	0
+	"	22	11
+	^	22	12
+	.	22	11
+	+	26	49
+	+	15	28
+	+	21	21
+	+	8	0
+	+	11	0
+	+	17	0
+	+	23	0
+	+	16	23
+	+	22	11
+
+> ~/AirBnB_clone_v2/web_flask/0-hello_route.py
+	*	1682245190	0
+	"	12	11
+	^	12	12
+	.	12	11
+	+	12	27
+	+	8	35
+	+	16	49
+	+	10	13
+	+	12	28
+	+	2	29
+	+	11	28
+	+	4	0
+	+	8	0
+	+	14	0
+	+	16	26
+	+	11	25
+	+	12	11
+
+> ~/AirBnB_clone_v2/web_flask/templates/10-hbnb_filters.html
+	*	1682244719	0
+	"	45	4
+	^	45	5
+	.	45	5
+	+	22	55
+	+	23	9
+	+	37	10
+	+	23	24
+	+	24	43
+	+	37	0
+	+	24	40
+	+	26	49
+	+	28	57
+	+	33	61
+	+	35	11
+	+	36	10
+	+	28	13
+	+	31	7
+	+	30	16
+	+	25	62
+	+	34	18
+	+	26	7
+	+	28	7
+	+	26	11
+	+	27	7
+	+	28	0
+	+	29	60
+	+	32	17
+	+	30	8
+	+	41	43
+	+	46	44
+	+	41	9
+	+	45	10
+	+	45	0
+	+	42	68
+	+	44	18
+	+	43	70
+	+	40	49
+	+	41	24
+	+	46	0
+	+	41	5
+	+	42	5
+	+	43	48
+	+	44	6
+	+	45	5
+
+> ~/AirBnB_clone_v2/web_flask/10-hbnb_filters.py
+	*	1682243534	0
+	"	13	29
+	^	13	30
+	.	13	29
+	+	11	24
+	+	12	10
+	+	13	41
+	+	16	0
+	+	15	37
+	+	16	50
+	+	17	60
+	+	13	29
+
+> ~/AirBnB_clone_v2/web_static/styles/6-filters.css
+	*	1682202151	0
+	"	41	18
+	^	41	19
+	.	41	18
+	+	35	0
+	+	38	0
+	+	40	24
+	+	26	4
+	+	27	0
+	+	41	18
+
+> ~/AirBnB_clone_v2/models/engine/db_storage.py
+	*	1682195742	0
+	"	78	29
+	^	71	30
+	.	71	29
+	+	22	23
+	+	5	38
+	+	22	37
+	+	3	8
+	+	28	0
+	+	24	0
+	+	23	70
+	+	24	71
+	+	26	68
+	+	22	62
+	+	25	71
+	+	26	70
+	+	28	0
+	+	5	39
+	+	26	71
+	+	28	0
+	+	26	71
+	+	27	52
+	+	30	48
+	+	23	71
+	+	24	55
+	+	25	71
+	+	26	55
+	+	39	0
+	+	12	28
+	+	6	38
+	+	7	40
+	+	39	0
+	+	40	56
+	+	13	34
+	+	42	57
+	+	9	25
+	+	45	59
+	+	46	16
+	+	50	30
+	+	48	20
+	+	54	31
+	+	59	38
+	+	61	4
+	+	61	0
+	+	60	0
+	+	71	29
+
+> ~/AirBnB_clone_v2/models/engine/file_storage.py
+	*	1682195444	0
+	"	69	20
+	^	69	21
+	.	69	20
+	+	62	41
+	+	65	15
+	+	56	20
+	+	11	25
+	+	20	26
+	+	21	18
+	+	21	0
+	+	69	20
+
+> ~/AirBnB_clone_v2/web_flask/templates/6-number_odd_or_even.html
+	*	1682194505	0
+	"	11	15
+	^	11	16
+	.	11	15
+	+	7	28
+	+	8	47
+	+	11	15
+
+> ~/alx-system_engineering-devops/0x14-mysql/4-mysql_configuration_replica
+	*	1681937854	0
+	"	6	26
+	^	6	27
+	.	6	26
+	+	6	26
+
+> ~/alx-system_engineering-devops/0x14-mysql/4-mysql_configuration_primary
+	*	1681937503	0
+	"	1	0
+
+> ~/alx-system_engineering-devops/0x14-mysql/5-mysql_backup
+	*	1681937378	0
+	"	1	0
+
+> ~/alx-system_engineering-devops/0x0B-ssh/1-create_ssh_key_pair
+	*	1681832721	0
+	"	3	28
+	^	3	29
+	.	2	20
+	+	3	36
+	+	2	16
+	+	3	13
+	+	2	20
+
+> ~/alx-system_engineering-devops/0x0B-ssh/0-use_a_private_key
+	*	1681832675	0
+	"	3	40
+	^	3	41
+	.	3	40
+	+	3	40
+	+	2	39
+	+	3	40
+
+> ~/alx-system_engineering-devops/0x13-firewall/0-block_all_incoming_traffic_but
+	*	1681748749	0
+	"	3	1
+	.	3	1
+	+	3	1
+
+> ~/alx-system_engineering-devops/0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter/0-blog_post
+	*	1681678374	0
+	"	1	0
+
+> ~/alx-low_level_programming/0x1E-search_algorithms/search_algos.h
+	*	1681401849	0
+	"	7	0
+	^	7	0
+	.	6	19
+	+	8	23
+	+	8	22
+	+	8	23
+	+	10	5
+	+	8	0
+	+	6	19
+
+> ~/alx-low_level_programming/0x1E-search_algorithms/0-linear.c
+	*	1681401795	0
+	"	9	40
+	^	9	41
+	.	9	40
+	+	26	0
+	+	8	1
+	+	9	40
+
+> ~/alx-low_level_programming/0x1E-search_algorithms/1-binary.c
+	*	1681400749	0
+	"	11	11
+	^	11	12
+	.	11	11
+	+	37	0
+	+	5	43
+	+	6	47
+	+	11	11
+
+> ~/alx-system_engineering-devops/0x10-https_ssl/1-haproxy_ssl_termination
+	*	1681123866	0
+	"	29	45
+	^	29	46
+	.	29	45
+	+	35	40
+	+	36	36
+	+	29	0
+	+	28	46
+	+	29	45
+
+> ~/alx-system_engineering-devops/0x10-https_ssl/0-world_wide_web
+	*	1680815504	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/AirBnB_clone_v2/2-do_deploy_web_static.py
+	*	1680796273	0
+	"	48	14
+	^	48	15
+	.	48	14
+	+	6	0
+	+	6	14
+	+	2	40
+	+	6	0
+	+	6	43
+	+	6	0
+	+	6	19
+	+	6	0
+	+	6	19
+	+	6	9
+	+	6	0
+	+	11	0
+	+	48	14
+
+> ~/AirBnB_clone_v2/3-deploy_web_static.py
+	*	1680796002	0
+	"	13	0
+	^	13	0
+	.	12	0
+	+	8	26
+	+	6	8
+	+	9	0
+	+	11	0
+	+	29	0
+	+	75	25
+	+	29	0
+	+	68	0
+	+	10	0
+	+	27	14
+	+	29	0
+	+	12	0
+
+> ~/AirBnB_clone_v2/1-pack_web_static.py
+	*	1680786598	0
+	"	21	53
+	^	21	54
+	.	21	53
+	+	12	60
+	+	12	82
+	+	24	0
+	+	21	60
+	+	23	14
+	+	24	0
+	+	12	49
+	+	12	60
+	+	5	8
+	+	12	37
+	+	12	38
+	+	18	0
+	+	12	61
+	+	17	62
+	+	21	50
+	+	12	47
+	+	13	56
+	+	14	57
+	+	15	56
+	+	16	57
+	+	17	57
+	+	19	38
+	+	21	53
+
+> ~/AirBnB_clone_v2/0-setup_web_static.sh
+	*	1680770770	0
+	"	26	32
+	^	26	33
+	.	26	32
+	+	9	17
+	+	26	32
+
+> ~/alx-system_engineering-devops/0x0E-web_stack_debugging_1/0-nginx_likes_port_80
+	*	1680769610	0
+	"	1	0
+
+> ~/alx-system_engineering-devops/0x0F-load_balancer/1-install_load_balancer
+	*	1680641709	0
+	"	39	23
+	^	39	24
+	.	39	23
+	+	38	23
+	+	39	36
+	+	38	37
+	+	18	14
+	+	38	36
+	+	39	35
+	+	38	23
+	+	39	23
+
+> ~/alx-system_engineering-devops/0x0F-load_balancer/0-custom_http_response_header
+	*	1680641448	0
+	"	27	32
+	^	27	33
+	.	27	32
+	+	36	20
+	+	27	32
+
+> ~/alx-system_engineering-devops/0x0C-web_server/2-setup_a_domain_name
+	*	1680520925	0
+	"	1	0
+
+> ~/alx-system_engineering-devops/0x0C-web_server/1-install_nginx_web_server
+	*	1680520892	0
+	"	20	0
+	^	20	0
+	.	20	0
+	+	9	47
+	+	18	20
+	+	21	0
+	+	20	0
+
+> ~/alx-system_engineering-devops/0x0C-web_server/0-transfer_file
+	*	1680518893	0
+	"	13	56
+	^	13	57
+	.	13	56
+	+	4	15
+	+	6	8
+	+	7	0
+	+	7	4
+	+	8	57
+	+	9	1
+	+	4	8
+	+	1	13
+	+	8	56
+	+	9	7
+	+	13	56
+
+> ~/alx-higher_level_programming/0x11-python-network_1/3-error_code.py
+	*	1680297600	0
+	"	12	50
+	^	12	51
+	.	12	50
+	+	16	0
+	+	11	53
+	+	13	39
+	+	15	45
+	+	16	0
+	+	12	50
+	+	5	18
+	+	14	23
+	+	12	50
+
+> ~/alx-higher_level_programming/0x11-python-network_1/4-hbtn_status.py
+	*	1680297165	0
+	"	7	17
+	^	7	18
+	.	7	17
+	+	7	58
+	+	8	0
+	+	7	60
+	+	8	27
+	+	9	43
+	+	10	44
+	+	9	44
+	+	7	17
+
+> ~/alx-higher_level_programming/0x11-python-network_1/6-post_email.py
+	*	1680296619	0
+	"	9	34
+	^	11	45
+	.	9	34
+	+	12	36
+	+	11	37
+	+	9	9
+	+	11	44
+	+	12	23
+	+	9	34
+
+> ~/alx-higher_level_programming/0x11-python-network_1/100-github_commits.py
+	*	1680295388	0
+	"	13	41
+	^	14	51
+	.	13	37
+	+	8	77
+	+	17	48
+	+	17	36
+	+	9	34
+	+	16	11
+	+	13	69
+	+	12	51
+	+	14	50
+	+	17	0
+	+	14	8
+	+	13	37
+
+> ~/alx-higher_level_programming/0x11-python-network_1/10-my_github.py
+	*	1680293955	0
+	"	12	30
+	^	12	31
+	.	12	30
+	+	9	39
+	+	11	0
+	+	5	39
+	+	10	49
+	+	11	38
+	+	12	30
+
+> ~/alx-higher_level_programming/0x11-python-network_1/8-json_api.py
+	*	1680274535	0
+	"	18	20
+	^	18	21
+	.	18	20
+	+	8	0
+	+	12	0
+	+	11	28
+	+	12	0
+	+	11	76
+	+	12	0
+	+	13	24
+	+	19	32
+	+	11	7
+	+	18	20
+
+> ~/alx-higher_level_programming/0x11-python-network_1/7-error_code.py
+	*	1680273508	0
+	"	14	27
+	^	14	28
+	.	14	27
+	+	9	27
+	+	8	20
+	+	9	36
+	+	9	8
+	+	9	36
+	+	9	0
+	+	12	60
+	+	14	27
+
+> ~/alx-higher_level_programming/0x11-python-network_1/5-hbtn_header.py
+	*	1680272823	0
+	"	9	46
+	^	9	47
+	.	9	46
+	+	8	40
+	+	9	46
+
+> ~/alx-higher_level_programming/0x11-python-network_1/2-post_email.py
+	*	1680271393	0
+	"	15	48
+	^	15	49
+	.	15	48
+	+	16	34
+	+	15	48
+
+> ~/alx-higher_level_programming/0x11-python-network_1/1-hbtn_header.py
+	*	1680270790	0
+	"	10	56
+	^	10	57
+	.	10	56
+	+	10	0
+	+	9	3
+	+	10	0
+	+	10	56
+
+> ~/alx-higher_level_programming/0x11-python-network_1/0-hbtn_status.py
+	*	1680270339	0
+	"	3	0
+	^	13	69
+	.	3	0
+	+	2	45
+	+	3	0
+	+	7	33
+	+	8	0
+	+	7	71
+	+	9	33
+	+	11	51
+	+	13	68
+	+	3	0
+
+> ~/alx-higher_level_programming/0x10-python-network_0/101-post_json.sh
+	*	1680211005	0
+	"	3	70
+	^	3	71
+	.	3	63
+	+	3	13
+	+	2	45
+	+	3	63
+
+> ~/alx-higher_level_programming/0x10-python-network_0/5-post_params.sh
+	*	1680210405	0
+	"	3	64
+	^	3	85
+	.	3	64
+	+	3	64
+
+> ~/alx-higher_level_programming/0x10-python-network_0/4-header.sh
+	*	1680207936	0
 	"	2	31
 	^	2	32
 	.	2	31
 	+	2	31
 
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/4-first_table.sql
-	*	1676407139	0
-	"	5	2
-	^	5	3
-	.	5	2
-	+	5	1
-	+	2	39
-	+	5	2
+> ~/alx-higher_level_programming/0x10-python-network_0/3-methods.sh
+	*	1680207587	0
+	"	2	47
+	^	2	48
+	.	2	47
+	+	2	47
 
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/3-list_tables.sql
-	*	1676407100	0
-	"	2	11
-	^	2	12
-	.	2	11
-	+	2	11
+> ~/alx-higher_level_programming/0x10-python-network_0/2-delete.sh
+	*	1680207345	0
+	"	2	29
+	^	2	30
+	.	2	29
+	+	3	14
+	+	2	29
 
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/2-remove_database.sql
-	*	1676407093	0
-	"	2	34
-	^	2	35
-	.	2	34
-	+	2	34
+> ~/alx-higher_level_programming/0x10-python-network_0/1-body.sh
+	*	1680207117	0
+	"	2	41
+	^	2	42
+	.	2	41
+	+	2	41
 
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/1-create_database_if_missing.sql
-	*	1676407068	0
-	"	2	7
-	^	2	41
-	.	2	40
-	+	2	40
-
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/0-list_databases.sql
-	*	1676407041	0
-	"	2	14
-	^	2	15
-	.	2	14
-	+	2	14
-
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/6-list_values.sql
-	*	1676407024	0
-	"	2	27
-	^	2	28
-	.	2	27
-	+	2	27
-
-> ~/alx-higher_level_programming/0x0D-SQL_introduction/README.md
-	*	1676404928	0
-	"	1	32
-	^	1	33
-	.	1	32
-	+	1	32
-
-> ~/AirBnB_clone/models/base_model.py
-	*	1675848032	0
-	"	21	47
-	^	21	48
-	.	21	47
-	+	18	0
-	+	4	14
-	+	17	39
-	+	4	13
-	+	18	0
-	+	21	47
-
-> ~/alx-system_engineering-devops/0x08-networking_basics_2/0-change_your_home_IP
-	*	1675252793	0
-	"	7	27
-	^	7	28
-	.	7	27
-	+	7	27
-
-> ~/alx-system_engineering-devops/0x07-networking_basics/1-types_of_network
-	*	1675251419	0
-	"	3	0
-	^	3	1
-	.	3	0
-	+	3	0
-
-> ~/alx-system_engineering-devops/0x07-networking_basics/5-is_the_host_on_the_network
-	*	1675251374	0
-	"	7	1
-	^	7	2
-	.	7	1
-	+	7	1
-
-> ~/alx-system_engineering-devops/0x07-networking_basics/4-TCP_and_UDP_ports
-	*	1675250928	0
+> ~/alx-higher_level_programming/0x10-python-network_0/0-body_size.sh
+	*	1680207090	0
 	"	3	19
 	^	3	20
 	.	3	19
 	+	3	19
-
-> ~/alx-system_engineering-devops/0x07-networking_basics/3-UDP_and_TCP
-	*	1675250720	0
-	"	3	0
-	^	3	1
-	.	3	0
+	+	3	44
 	+	3	0
+	+	2	1
+	+	3	19
 
-> ~/alx-system_engineering-devops/0x07-networking_basics/2-MAC_and_IP_address
-	*	1675250475	0
-	"	2	0
-	^	2	1
-	.	2	0
-	+	2	0
-
-> ~/alx-system_engineering-devops/0x07-networking_basics/0-OSI_model
-	*	1675250029	0
-	"	2	0
-	^	2	1
-	.	2	0
-	+	2	0
-
-> ~/alx-system_engineering-devops/0x06-regular_expressions/6-phone_number.rb
-	*	1675180138	0
-	"	2	26
-	^	2	38
-	.	2	26
-	+	2	26
-
-> ~/alx-system_engineering-devops/0x06-regular_expressions/2-repetition_token_1.rb
-	*	1675180026	0
-	"	1	4
-	^	1	5
-	.	1	4
-	+	2	23
-	+	1	4
-
-> ~/alx-system_engineering-devops/0x06-regular_expressions/7-OMG_WHY_ARE_YOU_SHOUTING.rb
-	*	1675177903	0
-	"	2	31
-	^	2	32
-	.	2	32
-	+	2	32
-
-> ~/alx-system_engineering-devops/0x06-regular_expressions/5-beginning_and_end.rb
-	*	1675177481	0
-	"	2	23
-	^	2	24
-	.	2	23
-	+	2	23
-
-> ~/alx-system_engineering-devops/0x06-regular_expressions/4-repetition_token_3.rb
-	*	1675177285	0
-	"	2	30
-	^	2	31
-	.	2	30
-	+	2	30
-
-> ~/alx-system_engineering-devops/0x06-regular_expressions/3-repetition_token_2.rb
-	*	1675177070	0
-	"	2	30
-	^	2	31
-	.	2	30
-	+	2	30
-
-> ~/alx-system_engineering-devops/0x06-regular_expressions/1-repetition_token_0.rb
-	*	1675176673	0
-	"	2	21
-	^	2	22
-	.	2	21
-	+	2	21
-
-> ~/alx-system_engineering-devops/0-simply_match_school.rb
-	*	1675176064	0
-	"	2	24
-	^	2	25
-	.	2	24
-	+	2	24
-
-> ~/alx-system_engineering-devops/0x05-processes_and_signals/6-stop_me_if_you_can
-	*	1674815967	0
-	"	3	33
-	^	3	34
-	.	3	34
-	+	3	34
-
-> ~/alx-system_engineering-devops/0x05-processes_and_signals/5-dont_stop_me_now
-	*	1674815820	0
-	"	2	47
-	^	2	48
-	.	2	47
-	+	3	0
-	+	2	18
-	+	4	42
-	+	2	47
-
-> ~/alx-system_engineering-devops/0x05-processes_and_signals/3-show_your_bash_pid_made_easy
-	*	1674815173	0
-	"	4	12
-	^	4	13
-	.	4	12
-	+	4	12
-
-> ~/alx-system_engineering-devops/0x05-processes_and_signals/0-what-is-my-pid
-	*	1674814143	0
-	"	4	6
-	^	4	7
-	.	4	6
-	+	4	6
-
-> ~/alx-system_engineering-devops/0x05-processes_and_signals/README.md
-	*	1674814033	0
-	"	1	27
-	^	1	28
-	.	1	27
-	+	1	27
-
-> ~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing/7-clock
-	*	1674763971	0
-	"	1	0
-
-> ~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing/5-4_bad_luck_8_is_your_chance
-	*	1674763634	0
-	"	6	2
-	^	6	3
-	.	6	2
-	+	6	2
-
-> ~/alx-system_engineering-devops/0x04-loops_conditions_and_parsing/3-until_best_school
-	*	1674763505	0
-	"	4	2
-	^	4	3
-	.	4	2
-	+	4	2
-
-> ~/alx-low_level_programming/0x04-loops_conditions_and_parsing/9-to_file_or_not_to_file
-	*	1674743954	0
-	"	16	2
-	^	16	3
-	.	16	2
-	+	19	1
-	+	12	2
-	+	9	10
-	+	16	2
-
-> ~/alx-low_level_programming/0x04-loops_conditions_and_parsing/8-for_ls
-	*	1674743064	0
-	"	7	0
-	.	8	0
-	+	8	0
-
-> ~/alx-low_level_programming/0x04-loops_conditions_and_parsing/7-clock
-	*	1674742989	0
-	"	1	0
-
-> ~/alx-low_level_programming/0x04-loops_conditions_and_parsing/6-superstitious_numbers
-	*	1674742934	0
-	"	1	0
-
-> ~/alx-low_level_programming/0x04-loops_conditions_and_parsing/5-4_bad_luck_8_is_your_chance
-	*	1674742888	0
-	"	19	0
-	.	20	0
-	+	20	0
-
-> ~/alx-low_level_programming/0x04-loops_conditions_and_parsing/4-if_9_say_hi
-	*	1674742816	0
-	"	1	0
-
-> ~/alx-low_level_programming/0x04-loops_conditions_and_parsing/3-until_best_school
-	*	1674742626	0
-	"	1	0
-
-> ~/alx-low_level_programming/0x04-loops_conditions_and_parsing/1-for_best_school
-	*	1674729914	0
-	"	6	0
-	^	6	1
-	.	6	0
-	+	6	0
-
-> ~/alx-low_level_programming/0x04-loops_conditions_and_parsing/README.md
-	*	1674727303	0
-	"	1	52
-	^	1	53
-	.	1	52
-	+	1	52
-
-> ~/sorting_algorithms/0-0
-	*	1674576836	0
-	"	1	0
-
-> ~/sorting_algorithms/1-insertion_sort_list.c
-	*	1674576764	0
-	"	1	0
-
-> ~/sorting_algorithms/0-bubble_sort.c
-	*	1674576641	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/sorting_algorithms/sort.h
-	*	1674576482	0
-	"	1	11
-	^	19	6
-	.	19	5
-	+	6	5
-	+	2	18
-	+	4	39
-	+	6	0
+> ~/alx-system_engineering-devops/0x0C-web_server/3-redirection
+	*	1680037290	0
+	"	21	62
+	^	21	63
+	.	21	62
 	+	19	5
+	+	18	6
+	+	21	19
+	+	22	0
+	+	21	61
+	+	26	0
+	+	21	62
 
-> ~/alx-higher_level_programming/0x0C-python-almost_a_circle/tests/test_models/test_square.py
-	*	1673885340	0
-	"	2	44
-	^	2	45
-	.	2	44
-	+	2	0
-	+	3	0
-	+	2	44
+> ~/alx-system_engineering-devops/0x0C-web_server/4-not_found_page_404
+	*	1680037268	0
+	"	38	0
+	^	28	62
+	.	39	0
+	+	10	30
+	+	11	57
+	+	31	0
+	+	27	5
+	+	24	4
+	+	23	29
+	+	28	62
+	+	39	0
 
-> ~/alx-higher_level_programming/0x0C-python-almost_a_circle/tests/test_models/test_rectangle.py
-	*	1673885238	0
-	"	2	47
-	^	2	48
-	.	2	47
-	+	2	0
-	+	3	0
-	+	2	47
+> ~/alx-system_engineering-devops/0x0B-ssh/2-ssh_config
+	*	1679826688	0
+	"	11	0
 
-> ~/alx-higher_level_programming/0x0C-python-almost_a_circle/tests/test_models/test_base.py
-	*	1673885130	0
-	"	1	17
-	^	1	18
-	.	1	17
-	+	7	36
-	+	1	17
-
-> ~/alx-higher_level_programming/0x0C-python-almost_a_circle/models/base.py
-	*	1673856493	0
-	"	73	27
-	^	73	28
-	.	73	27
-	+	20	29
-	+	19	0
-	+	20	39
-	+	29	44
-	+	3	11
-	+	35	0
-	+	35	42
-	+	41	49
-	+	49	44
-	+	59	22
-	+	73	27
-
-> ~/alx-higher_level_programming/0x0C-python-almost_a_circle/tests/tests_models/__init__.py
-	*	1673606098	0
-	"	1	0
-
-> ~/alx-higher_level_programming/0x0C-python-almost_a_circle/models/square.py
-	*	1673604594	0
-	"	1	0
-
-> ~/alx-higher_level_programming/0x0C-python-almost_a_circle/models/rectangle.py
-	*	1673604463	0
-	"	114	31
-	^	114	32
-	.	114	32
-	+	17	45
-	+	56	29
-	+	80	19
-	+	70	4
-	+	69	0
-	+	63	0
-	+	24	9
-	+	58	12
-	+	55	47
-	+	38	44
-	+	66	20
-	+	67	42
-	+	78	20
-	+	79	22
-	+	54	16
-	+	95	20
-	+	93	38
-	+	90	35
-	+	101	17
-	+	100	58
-	+	102	20
-	+	98	55
-	+	52	29
-	+	35	29
-	+	89	20
-	+	92	33
-	+	91	32
-	+	93	32
-	+	90	28
-	+	75	13
-	+	63	6
-	+	46	17
-	+	29	10
-	+	120	21
-	+	111	34
-	+	120	21
-	+	114	33
-	+	120	21
-	+	112	21
-	+	120	20
-	+	117	39
-	+	116	35
-	+	124	36
-	+	122	35
-	+	124	37
-	+	128	31
-	+	104	35
-	+	107	51
-	+	108	50
-	+	110	34
-	+	111	11
-	+	112	15
-	+	113	19
-	+	114	15
-	+	115	19
-	+	116	19
-	+	117	19
-	+	118	19
-	+	119	19
-	+	120	19
-	+	121	15
-	+	122	19
-	+	123	15
-	+	124	19
-	+	125	15
-	+	126	19
-	+	127	15
-	+	128	36
-	+	143	29
-	+	46	10
-	+	3	27
-	+	31	28
-	+	33	28
-	+	153	8
-	+	114	32
-
-> ~/alx-higher_level_programming/0x0C-python-almost_a_circle/models/sqaure.py
-	*	1673604194	0
-	"	73	8
-	^	73	9
-	.	73	8
-	+	16	44
-	+	12	46
-	+	13	46
-	+	16	46
-	+	27	26
-	+	25	52
-	+	53	39
-	+	64	29
-	+	51	21
-	+	65	4
-	+	72	26
-	+	69	20
-	+	73	8
-
-> ~/alx-higher_level_programming/0x0C-python-almost_a_circle/rec
-	*	1673602175	0
-	"	1	0
-
-> ~/alx-higher_level_programming/0x0C-python-almost_a_circle/models/__init__.py
-	*	1673512603	0
-	"	1	0
-
-> ~/alx-higher_level_programming/0x0C-python-almost_a_circle/README.md
-	*	1673512309	0
-	"	1	96
-	^	1	97
-	.	1	96
-	+	1	96
-
-> ~/alx-higher_level_programming/README.md
-	*	1673512220	0
-	"	1	0
+> /etc/ssh/sshd_config
+	*	1679766039	0
+	"	58	24
+	^	58	25
+	.	58	24
+	+	58	24
