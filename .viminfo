@@ -15,13 +15,15 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1683027751,,"wq"
+|2,0,1688461611,,"wq"
 :set number
-|2,0,1683027016,,"set number"
+|2,0,1688461595,,"set number"
+:q!
+|2,0,1683297052,,"q!"
+:set umber
+|2,0,1683294066,,"set umber"
 :Wq
 |2,0,1682940643,,"Wq"
-:q!
-|2,0,1682876669,,"q!"
 :w
 |2,0,1682777560,,"w"
 :set nummber
@@ -35,7 +37,7 @@ $
 
 # Search String History (newest to oldest):
 ? @$
-|2,1,1682796730,,"@$"
+|2,1,1683297048,,"@$"
 
 # Expression History (newest to oldest):
 
@@ -45,265 +47,639 @@ $
 
 # Registers:
 "0	CHAR	0
-	# app_views Blueprint from app.v1.views
-	app.register_blueprint(app_views)
-|3,0,0,0,2,0,1682876770,"# app_views Blueprint from app.v1.views","app.register_blueprint(app_views)"
+	<li><input type="checkbox" />{{ amenity.name }}</li>
+|3,0,0,0,1,0,1683297048,"<li><input type=\"checkbox\" />{{ amenity.name }}</li>"
 "1	LINE	0
-	    
-|3,0,1,1,1,0,1682955600,"    "
+	    rlt = list()
+|3,0,1,1,1,0,1683640740,"    rlt = list()"
 "2	LINE	0
-	    
-|3,0,2,1,1,0,1682955572,"    "
+	    print(rlt)
+|3,0,2,1,1,0,1683640739,"    print(rlt)"
 "3	LINE	0
-	import models
-|3,0,3,1,1,0,1682940250,"import models"
+	        rlt.append(result.get("data").get("title"))
+|3,0,3,1,1,0,1683640738,"        rlt.append(result.get(\"data\").get(\"title\"))"
 "4	LINE	0
-	from datetime import datetime
-|3,0,4,1,1,0,1682938573,"from datetime import datetime"
+	    for result in results.get("children"):
+|3,0,4,1,1,0,1683640737,"    for result in results.get(\"children\"):"
 "5	LINE	0
-	from models import base_model, amenity, city, place, review, state, user
-|3,0,5,1,1,0,1682938572,"from models import base_model, amenity, city, place, review, state, user"
-"6	LINE	0
-	from models import base_model, amenity, city, place, review, state, user
-|3,0,6,1,1,0,1682938440,"from models import base_model, amenity, city, place, review, state, user"
-"7	LINE	0
-	from models.base_model import Base
-|3,0,7,1,1,0,1682938439,"from models.base_model import Base"
+	        print(result.get("data").get("title"))
+|3,0,5,1,1,0,1683640258,"        print(result.get(\"data\").get(\"title\"))"
+"6	CHAR	0
+	{% for place in places %}
+		<article>
+		  <div class="title_box">
+		    <h2>{{ place.name }}</h2>
+		    <div class="price_by_night">${{ place.price_by_night }}</div>
+		  </div>
+		  <div class="information">
+		    <div class="max_guest">{{ place.max_guest }} Guest{% if place.max_guest != 1 %}s{% endif %}</div>
+	            <div class="number_rooms">{{ place.number_rooms }} Bedroom{% if place.number_rooms != 1 %}s{% endif %}</div>
+	            <div class="number_bathrooms">{{ place.number_bathrooms }} Bathroom{% if place.number_bathrooms != 1 %}s{% endif %}</div>
+		  </div>
+		  <div class="user">
+	            <b>Owner:</b> {{ place.user.first_name }} {{ place.user.last_name }}
+	          </div>
+	          <div class="description">
+		    {{ place.description | safe }}
+	          </div>
+		</article>
+		{% endfor %}
+|3,0,6,0,19,0,1683301095,"{% for place in places %}","	<article>","	  <div class=\"title_box\">","	    <h2>{{ place.name }}</h2>","	    <div class=\"price_by_night\">${{ place.price_by_night }}</div>","	  </div>","	  <div class=\"information\">","	    <div class=\"max_guest\">{{ place.max_guest }} Guest{% if place.max_guest != 1 %}s{% endif %}</div>",>124
+|<"            <div class=\"number_rooms\">{{ place.number_rooms }} Bedroom{% if place.number_rooms != 1 %}s{% endif %}</div>","            <div class=\"number_bathrooms\">{{ place.number_bathrooms }} Bathroom{% if place.number_bathrooms != 1 %}s{% endif %}</div>","	  </div>","	  <div class=\"user\">","            <b>Owner:</b> {{ place.user.first_name }} {{ place.user.last_name }}","          </div>","          <div class=\"description\">","	    {{ place.description | safe }}",>18
+|<"          </div>","	</article>","	{% endfor %}"
+"7	CHAR	0
+	let amenities = {};
+	 $('input[type="checkbox"]').change(function () {
+	  if ($(this).is(':checked')) {
+	    amenities[$(this).attr('data-id') = $(this).attr('data-name');
+	  } else {
+	    delete amenities[$(this).attr('data-id')];
+	  }
+	  $('.amenities H4').text(Object.values(amenities).join(', '));
+	 });
+|3,0,7,0,9,0,1683297749,"let amenities = {};"," $('input[type=\"checkbox\"]').change(function () {","  if ($(this).is(':checked')) {","    amenities[$(this).attr('data-id') = $(this).attr('data-name');","  } else {","    delete amenities[$(this).attr('data-id')];","  }","  $('.amenities H4').text(Object.values(amenities).join(', '));"," });"
 "8	LINE	0
-	import os
-|3,0,8,1,1,0,1682938383,"import os"
+	$(function(){
+|3,0,8,1,1,0,1683127472,"$(function(){"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1682938382,""
+	});
+|3,0,9,1,1,0,1683127470,"});"
 ""-	CHAR	0
-	=
-|3,1,36,0,1,0,1683019433,"="
+	0
+|3,1,36,0,1,0,1684604289,"0"
 
 # File marks:
-'0  1  16  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,48,1,16,1683027751,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
-'1  1  0  ~/AirBnB_clone_v3/models/base_model.py
-|4,49,1,0,1683026257,"~/AirBnB_clone_v3/models/base_model.py"
-'2  127  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,50,127,26,1683022231,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
-'3  127  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,51,127,26,1683022231,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
-'4  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,52,106,26,1683019438,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
-'5  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,53,106,26,1683019438,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
-'6  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,54,106,26,1683019438,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
-'7  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,55,106,26,1683019438,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
-'8  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,56,31,45,1683019303,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
-'9  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,57,31,45,1683019303,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
+'0  4  0  ~/alx-interview/0-lockboxes.py
+|4,48,4,0,1688461611,"~/alx-interview/0-lockboxes.py"
+'1  7  48  ~/alx-interview/0-lockboxes.py
+|4,49,7,48,1688461570,"~/alx-interview/0-lockboxes.py"
+'2  6  48  ~/alx-interview/0-lockboxes.py
+|4,50,6,48,1688461570,"~/alx-interview/0-lockboxes.py"
+'3  2  16  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,51,2,16,1684604292,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+'4  18  15  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,52,18,15,1684602823,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+'5  18  15  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,53,18,15,1684602823,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+'6  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,54,27,0,1684601828,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+'7  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,55,27,0,1684601828,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+'8  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,56,27,0,1684601828,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+'9  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,57,27,0,1684601828,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
 
 # Jumplist (newest first):
--'  1  16  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,1,16,1683027751,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  127  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,127,26,1683026354,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  1  0  ~/AirBnB_clone_v3/models/base_model.py
-|4,39,1,0,1683026257,"~/AirBnB_clone_v3/models/base_model.py"
--'  1  0  ~/AirBnB_clone_v3/models/base_model.py
-|4,39,1,0,1683026257,"~/AirBnB_clone_v3/models/base_model.py"
--'  127  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,127,26,1683022231,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  127  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,127,26,1683022231,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,106,26,1683021228,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,106,26,1683021228,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,106,26,1683021228,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,106,26,1683019438,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  106  26  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,106,26,1683019438,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,31,45,1683019368,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,31,45,1683019368,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,31,45,1683019368,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,31,45,1683019368,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,31,45,1683019368,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,31,45,1683019303,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  31  45  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,31,45,1683019303,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,37,20,1683019272,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,37,20,1683019187,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  37  20  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,37,20,1683019187,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  147  0  ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
-|4,39,147,0,1683018961,"~/AirBnB_clone_v3/tests/test_models/test_base_model.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
--'  277  16  ~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py
-|4,39,277,16,1682979674,"~/AirBnB_clone_v3/tests/test_models/test_engine/test_file_storage.py"
+-'  4  0  ~/alx-interview/0-lockboxes.py
+|4,39,4,0,1688461611,"~/alx-interview/0-lockboxes.py"
+-'  7  48  ~/alx-interview/0-lockboxes.py
+|4,39,7,48,1688461591,"~/alx-interview/0-lockboxes.py"
+-'  6  48  ~/alx-interview/0-lockboxes.py
+|4,39,6,48,1688461570,"~/alx-interview/0-lockboxes.py"
+-'  5  0  ~/alx-interview/0-lockboxes.py
+|4,39,5,0,1688461326,"~/alx-interview/0-lockboxes.py"
+-'  4  0  ~/alx-interview/0-lockboxes.py
+|4,39,4,0,1688461326,"~/alx-interview/0-lockboxes.py"
+-'  2  16  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,2,16,1684604292,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  2  16  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,2,16,1684604292,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  2  16  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,2,16,1684604292,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  2  16  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,2,16,1684604292,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  18  15  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,18,15,1684604277,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  18  15  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,18,15,1684604277,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  18  15  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,18,15,1684604277,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  18  15  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,18,15,1684604277,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  18  15  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,18,15,1684602823,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  18  15  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,18,15,1684602823,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  18  15  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,18,15,1684602823,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  18  15  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,18,15,1684602823,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,27,0,1684602794,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,27,0,1684602794,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,27,0,1684602794,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,27,0,1684602794,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,27,0,1684602794,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,27,0,1684602794,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,27,0,1684602794,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,27,0,1684602794,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,27,0,1684601828,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,27,0,1684601828,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,27,0,1684601828,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  27  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,27,0,1684601828,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  1  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,1,0,1684601804,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  1  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,1,0,1684601804,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  1  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,1,0,1684601804,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  1  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,1,0,1684601804,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  1  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,1,0,1684601804,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  1  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,1,0,1684601804,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  1  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,1,0,1684601804,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  1  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,1,0,1684601804,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  1  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,1,0,1684601804,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  1  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,1,0,1684601804,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  1  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,1,0,1684601804,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  1  0  ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+|4,39,1,0,1684601804,"~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  22  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,22,1684448354,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
+-'  3  48  ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+|4,39,3,48,1684447516,"~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config"
 
 # History of marks within files (newest to oldest):
+
+> ~/alx-interview/0-lockboxes.py
+	*	1688461609	0
+	"	4	0
+	^	4	0
+	.	4	0
+	+	2	43
+	+	13	6
+	+	7	48
+	+	4	0
+
+> ~/alx-system_engineering-devops/0x1A-application_server/4-app_server-nginx_config
+	*	1684604291	0
+	"	2	16
+	^	2	17
+	.	2	16
+	+	27	0
+	+	18	15
+	+	2	16
+
+> ~/alx-system_engineering-devops/0x1A-application_server/2-app_server-nginx_config
+	*	1684448352	0
+	"	3	22
+	^	3	49
+	.	3	22
+	+	9	28
+	+	12	34
+	+	3	22
+
+> ~/alx-system_engineering-devops/0x1B-web_stack_debugging_4/0-the_sky_is_the_limit_not.pp
+	*	1684426923	0
+	"	1	0
+
+> ~/alx-system_engineering-devops/0x17-web_stack_debugging_3/0-strace_is_your_friend.pp
+	*	1683641242	0
+	"	1	0
+
+> ~/alx-system_engineering-devops/0x16-api_advanced/1-top_ten.py
+	*	1683641007	0
+	"	20	20
+	^	20	21
+	.	20	20
+	+	3	9
+	+	8	10
+	+	9	22
+	+	9	46
+	+	10	42
+	+	16	4
+	+	17	46
+	+	23	95
+	+	17	50
+	+	18	27
+	+	17	48
+	+	23	15
+	+	23	49
+	+	23	50
+	+	23	4
+	+	23	43
+	+	24	4
+	+	21	13
+	+	20	20
+
+> ~/alx-system_engineering-devops/0x16-api_advanced/0-subs.py
+	*	1683639515	0
+	"	14	49
+	^	14	50
+	.	14	49
+	+	2	59
+	+	10	68
+	+	18	36
+	+	14	49
+
+> ~/alx-system_engineering-devops/0x16-api_advanced/2-recurse.py
+	*	1683623671	0
+	"	10	64
+	^	10	65
+	.	10	64
+	+	10	64
+
+> ~/AirBnB_clone_v4/web_dynamic/static/scripts/4-hbnb.js
+	*	1683303696	0
+	"	81	5
+	^	81	6
+	.	51	11
+	+	42	38
+	+	83	4
+	+	43	12
+	+	49	30
+	+	50	35
+	+	80	5
+	+	51	11
+	+	52	11
+	+	80	10
+	+	52	11
+	+	51	11
+
+> ~/AirBnB_clone_v4/web_dynamic/templates/4-hbnb.html
+	*	1683303120	0
+	"	12	55
+	^	12	56
+	.	12	55
+	+	12	55
+
+> ~/AirBnB_clone_v4/web_dynamic/4-hbnb.py
+	*	1683303087	0
+	"	22	13
+	^	22	14
+	.	22	13
+	+	22	13
+
+> ~/AirBnB_clone_v4/web_dynamic/static/scripts/3-hbnb.js
+	*	1683301944	0
+	"	42	13
+	^	42	14
+	.	42	13
+	+	3	10
+	+	4	3
+	+	2	6
+	+	7	3
+	+	9	28
+	+	39	10
+	+	11	11
+	+	42	13
+
+> ~/AirBnB_clone_v4/web_dynamic/templates/3-hbnb.html
+	*	1683301107	0
+	"	56	0
+	^	12	56
+	.	57	0
+	+	12	55
+	+	57	0
+
+> ~/AirBnB_clone_v4/web_dynamic/3-hbnb.py
+	*	1683300964	0
+	"	22	13
+	^	22	14
+	.	22	13
+	+	22	13
+
+> ~/AirBnB_clone_v4/web_dynamic/static/scripts/2-hbnb.js
+	*	1683298214	0
+	"	18	2
+	^	18	3
+	.	18	2
+	+	19	0
+	+	3	22
+	+	4	47
+	+	5	12
+	+	6	50
+	+	18	3
+	+	11	2
+	+	10	2
+	+	11	2
+	+	12	5
+	+	13	8
+	+	14	5
+	+	15	8
+	+	16	5
+	+	17	3
+	+	18	2
+
+> ~/AirBnB_clone_v4/web_dynamic/static/styles/3-header.css
+	*	1683297688	0
+	"	23	0
+	^	23	1
+	.	23	0
+	+	19	0
+	+	17	22
+	+	23	0
+
+> ~/AirBnB_clone_v4/web_dynamic/templates/2-hbnb.html
+	*	1683297340	0
+	"	18	32
+	^	18	33
+	.	18	32
+	+	12	55
+	+	18	32
+
+> ~/AirBnB_clone_v4/web_dynamic/2-hbnb.py
+	*	1683297153	0
+	"	22	13
+	^	22	14
+	.	22	13
+	+	22	13
+
+> ~/AirBnB_clone_v4/api/v1/app.py
+	*	1683297110	0
+	"	14	48
+	^	14	49
+	.	14	48
+	+	14	48
+
+> ~/AirBnB_clone_v4/web_dynamic/static/scripts/1-hbnb.js
+	*	1683296713	0
+	"	11	2
+	^	11	3
+	.	11	2
+	+	11	0
+	+	3	49
+	+	4	31
+	+	5	65
+	+	6	10
+	+	7	45
+	+	9	62
+	+	10	3
+	+	11	2
+
+> ~/AirBnB_clone_v4/web_dynamic/templates/1-hbnb.html
+	*	1683296164	0
+	"	45	42
+	^	45	43
+	.	45	42
+	+	11	71
+	+	12	83
+	+	10	76
+	+	9	118
+	+	8	121
+	+	7	119
+	+	6	120
+	+	5	120
+	+	45	42
+
+> ~/AirBnB_clone_v4/web_dynamic/templates/0-hbnb.html
+	*	1683295325	0
+	"	6	112
+	^	5	113
+	.	5	112
+	+	5	111
+	+	6	117
+	+	7	118
+	+	8	119
+	+	9	117
+	+	10	88
+	+	9	116
+	+	8	118
+	+	7	117
+	+	6	116
+	+	5	112
+
+> ~/AirBnB_clone_v4/web_dynamic/1-hbnb.py
+	*	1683294094	0
+	"	22	13
+	^	22	14
+	.	22	13
+	+	22	13
+
+> ~/AirBnB_clone_v4/web_dynamic/0-hbnb.py
+	*	1683282866	0
+	"	42	36
+	^	10	24
+	.	42	36
+	+	22	14
+	+	42	47
+	+	10	23
+	+	42	36
+
+> ~/AirBnB_clone_v4/README.md
+	*	1683281598	0
+	"	161	62
+	^	161	63
+	.	161	63
+	+	162	0
+	+	161	63
+
+> ~/alx-higher_level_programming/0x15-javascript-web_jquery/8-script.js
+	*	1683143916	0
+	"	7	86
+	^	7	87
+	.	7	86
+	+	2	62
+	+	7	86
+
+> ~/alx-higher_level_programming/0x15-javascript-web_jquery/7-script.js
+	*	1683143754	0
+	"	10	34
+	^	10	35
+	.	10	34
+	+	2	68
+	+	10	34
+
+> ~/alx-higher_level_programming/0x15-javascript-web_jquery/100-script.js
+	*	1683130565	0
+	"	3	2
+	^	3	3
+	.	3	2
+	+	2	56
+	+	1	57
+	+	2	59
+	+	3	2
+
+> ~/alx-higher_level_programming/0x15-javascript-web_jquery/9-script.js
+	*	1683130330	0
+	"	3	2
+	^	3	3
+	.	3	2
+	+	3	2
+
+> ~/alx-higher_level_programming/0x15-javascript-web_jquery/6-script.js
+	*	1683129301	0
+	"	3	2
+	^	3	3
+	.	3	2
+	+	3	2
+
+> ~/alx-higher_level_programming/0x15-javascript-web_jquery/5-script.js
+	*	1683129191	0
+	"	3	2
+	^	3	3
+	.	3	2
+	+	3	2
+
+> ~/alx-higher_level_programming/0x15-javascript-web_jquery/4-script.js
+	*	1683128838	0
+	"	2	30
+	^	2	31
+	.	2	30
+	+	3	2
+	+	2	30
+
+> ~/alx-higher_level_programming/0x15-javascript-web_jquery/3-script.js
+	*	1683128547	0
+	"	3	2
+	^	3	3
+	.	3	2
+	+	3	2
+
+> ~/alx-higher_level_programming/0x15-javascript-web_jquery/2-script.js
+	*	1683128367	0
+	"	3	2
+	^	3	3
+	.	3	2
+	+	3	2
+
+> ~/alx-higher_level_programming/0x15-javascript-web_jquery/1-script.js
+	*	1683127526	0
+	"	1	24
+	^	1	25
+	.	1	24
+	+	2	0
+	+	1	24
+
+> ~/alx-higher_level_programming/0x15-javascript-web_jquery/0-script.js
+	*	1683127264	0
+	"	1	56
+	^	1	57
+	.	1	56
+	+	1	56
 
 > ~/AirBnB_clone_v3/tests/test_models/test_base_model.py
 	*	1683027749	0
@@ -1407,405 +1783,3 @@ $
 	+	10	5
 	+	8	0
 	+	6	19
-
-> ~/alx-low_level_programming/0x1E-search_algorithms/0-linear.c
-	*	1681401795	0
-	"	9	40
-	^	9	41
-	.	9	40
-	+	26	0
-	+	8	1
-	+	9	40
-
-> ~/alx-low_level_programming/0x1E-search_algorithms/1-binary.c
-	*	1681400749	0
-	"	11	11
-	^	11	12
-	.	11	11
-	+	37	0
-	+	5	43
-	+	6	47
-	+	11	11
-
-> ~/alx-system_engineering-devops/0x10-https_ssl/1-haproxy_ssl_termination
-	*	1681123866	0
-	"	29	45
-	^	29	46
-	.	29	45
-	+	35	40
-	+	36	36
-	+	29	0
-	+	28	46
-	+	29	45
-
-> ~/alx-system_engineering-devops/0x10-https_ssl/0-world_wide_web
-	*	1680815504	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/AirBnB_clone_v2/2-do_deploy_web_static.py
-	*	1680796273	0
-	"	48	14
-	^	48	15
-	.	48	14
-	+	6	0
-	+	6	14
-	+	2	40
-	+	6	0
-	+	6	43
-	+	6	0
-	+	6	19
-	+	6	0
-	+	6	19
-	+	6	9
-	+	6	0
-	+	11	0
-	+	48	14
-
-> ~/AirBnB_clone_v2/3-deploy_web_static.py
-	*	1680796002	0
-	"	13	0
-	^	13	0
-	.	12	0
-	+	8	26
-	+	6	8
-	+	9	0
-	+	11	0
-	+	29	0
-	+	75	25
-	+	29	0
-	+	68	0
-	+	10	0
-	+	27	14
-	+	29	0
-	+	12	0
-
-> ~/AirBnB_clone_v2/1-pack_web_static.py
-	*	1680786598	0
-	"	21	53
-	^	21	54
-	.	21	53
-	+	12	60
-	+	12	82
-	+	24	0
-	+	21	60
-	+	23	14
-	+	24	0
-	+	12	49
-	+	12	60
-	+	5	8
-	+	12	37
-	+	12	38
-	+	18	0
-	+	12	61
-	+	17	62
-	+	21	50
-	+	12	47
-	+	13	56
-	+	14	57
-	+	15	56
-	+	16	57
-	+	17	57
-	+	19	38
-	+	21	53
-
-> ~/AirBnB_clone_v2/0-setup_web_static.sh
-	*	1680770770	0
-	"	26	32
-	^	26	33
-	.	26	32
-	+	9	17
-	+	26	32
-
-> ~/alx-system_engineering-devops/0x0E-web_stack_debugging_1/0-nginx_likes_port_80
-	*	1680769610	0
-	"	1	0
-
-> ~/alx-system_engineering-devops/0x0F-load_balancer/1-install_load_balancer
-	*	1680641709	0
-	"	39	23
-	^	39	24
-	.	39	23
-	+	38	23
-	+	39	36
-	+	38	37
-	+	18	14
-	+	38	36
-	+	39	35
-	+	38	23
-	+	39	23
-
-> ~/alx-system_engineering-devops/0x0F-load_balancer/0-custom_http_response_header
-	*	1680641448	0
-	"	27	32
-	^	27	33
-	.	27	32
-	+	36	20
-	+	27	32
-
-> ~/alx-system_engineering-devops/0x0C-web_server/2-setup_a_domain_name
-	*	1680520925	0
-	"	1	0
-
-> ~/alx-system_engineering-devops/0x0C-web_server/1-install_nginx_web_server
-	*	1680520892	0
-	"	20	0
-	^	20	0
-	.	20	0
-	+	9	47
-	+	18	20
-	+	21	0
-	+	20	0
-
-> ~/alx-system_engineering-devops/0x0C-web_server/0-transfer_file
-	*	1680518893	0
-	"	13	56
-	^	13	57
-	.	13	56
-	+	4	15
-	+	6	8
-	+	7	0
-	+	7	4
-	+	8	57
-	+	9	1
-	+	4	8
-	+	1	13
-	+	8	56
-	+	9	7
-	+	13	56
-
-> ~/alx-higher_level_programming/0x11-python-network_1/3-error_code.py
-	*	1680297600	0
-	"	12	50
-	^	12	51
-	.	12	50
-	+	16	0
-	+	11	53
-	+	13	39
-	+	15	45
-	+	16	0
-	+	12	50
-	+	5	18
-	+	14	23
-	+	12	50
-
-> ~/alx-higher_level_programming/0x11-python-network_1/4-hbtn_status.py
-	*	1680297165	0
-	"	7	17
-	^	7	18
-	.	7	17
-	+	7	58
-	+	8	0
-	+	7	60
-	+	8	27
-	+	9	43
-	+	10	44
-	+	9	44
-	+	7	17
-
-> ~/alx-higher_level_programming/0x11-python-network_1/6-post_email.py
-	*	1680296619	0
-	"	9	34
-	^	11	45
-	.	9	34
-	+	12	36
-	+	11	37
-	+	9	9
-	+	11	44
-	+	12	23
-	+	9	34
-
-> ~/alx-higher_level_programming/0x11-python-network_1/100-github_commits.py
-	*	1680295388	0
-	"	13	41
-	^	14	51
-	.	13	37
-	+	8	77
-	+	17	48
-	+	17	36
-	+	9	34
-	+	16	11
-	+	13	69
-	+	12	51
-	+	14	50
-	+	17	0
-	+	14	8
-	+	13	37
-
-> ~/alx-higher_level_programming/0x11-python-network_1/10-my_github.py
-	*	1680293955	0
-	"	12	30
-	^	12	31
-	.	12	30
-	+	9	39
-	+	11	0
-	+	5	39
-	+	10	49
-	+	11	38
-	+	12	30
-
-> ~/alx-higher_level_programming/0x11-python-network_1/8-json_api.py
-	*	1680274535	0
-	"	18	20
-	^	18	21
-	.	18	20
-	+	8	0
-	+	12	0
-	+	11	28
-	+	12	0
-	+	11	76
-	+	12	0
-	+	13	24
-	+	19	32
-	+	11	7
-	+	18	20
-
-> ~/alx-higher_level_programming/0x11-python-network_1/7-error_code.py
-	*	1680273508	0
-	"	14	27
-	^	14	28
-	.	14	27
-	+	9	27
-	+	8	20
-	+	9	36
-	+	9	8
-	+	9	36
-	+	9	0
-	+	12	60
-	+	14	27
-
-> ~/alx-higher_level_programming/0x11-python-network_1/5-hbtn_header.py
-	*	1680272823	0
-	"	9	46
-	^	9	47
-	.	9	46
-	+	8	40
-	+	9	46
-
-> ~/alx-higher_level_programming/0x11-python-network_1/2-post_email.py
-	*	1680271393	0
-	"	15	48
-	^	15	49
-	.	15	48
-	+	16	34
-	+	15	48
-
-> ~/alx-higher_level_programming/0x11-python-network_1/1-hbtn_header.py
-	*	1680270790	0
-	"	10	56
-	^	10	57
-	.	10	56
-	+	10	0
-	+	9	3
-	+	10	0
-	+	10	56
-
-> ~/alx-higher_level_programming/0x11-python-network_1/0-hbtn_status.py
-	*	1680270339	0
-	"	3	0
-	^	13	69
-	.	3	0
-	+	2	45
-	+	3	0
-	+	7	33
-	+	8	0
-	+	7	71
-	+	9	33
-	+	11	51
-	+	13	68
-	+	3	0
-
-> ~/alx-higher_level_programming/0x10-python-network_0/101-post_json.sh
-	*	1680211005	0
-	"	3	70
-	^	3	71
-	.	3	63
-	+	3	13
-	+	2	45
-	+	3	63
-
-> ~/alx-higher_level_programming/0x10-python-network_0/5-post_params.sh
-	*	1680210405	0
-	"	3	64
-	^	3	85
-	.	3	64
-	+	3	64
-
-> ~/alx-higher_level_programming/0x10-python-network_0/4-header.sh
-	*	1680207936	0
-	"	2	31
-	^	2	32
-	.	2	31
-	+	2	31
-
-> ~/alx-higher_level_programming/0x10-python-network_0/3-methods.sh
-	*	1680207587	0
-	"	2	47
-	^	2	48
-	.	2	47
-	+	2	47
-
-> ~/alx-higher_level_programming/0x10-python-network_0/2-delete.sh
-	*	1680207345	0
-	"	2	29
-	^	2	30
-	.	2	29
-	+	3	14
-	+	2	29
-
-> ~/alx-higher_level_programming/0x10-python-network_0/1-body.sh
-	*	1680207117	0
-	"	2	41
-	^	2	42
-	.	2	41
-	+	2	41
-
-> ~/alx-higher_level_programming/0x10-python-network_0/0-body_size.sh
-	*	1680207090	0
-	"	3	19
-	^	3	20
-	.	3	19
-	+	3	19
-	+	3	44
-	+	3	0
-	+	2	1
-	+	3	19
-
-> ~/alx-system_engineering-devops/0x0C-web_server/3-redirection
-	*	1680037290	0
-	"	21	62
-	^	21	63
-	.	21	62
-	+	19	5
-	+	18	6
-	+	21	19
-	+	22	0
-	+	21	61
-	+	26	0
-	+	21	62
-
-> ~/alx-system_engineering-devops/0x0C-web_server/4-not_found_page_404
-	*	1680037268	0
-	"	38	0
-	^	28	62
-	.	39	0
-	+	10	30
-	+	11	57
-	+	31	0
-	+	27	5
-	+	24	4
-	+	23	29
-	+	28	62
-	+	39	0
-
-> ~/alx-system_engineering-devops/0x0B-ssh/2-ssh_config
-	*	1679826688	0
-	"	11	0
-
-> /etc/ssh/sshd_config
-	*	1679766039	0
-	"	58	24
-	^	58	25
-	.	58	24
-	+	58	24

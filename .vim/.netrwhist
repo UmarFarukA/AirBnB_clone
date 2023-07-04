@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/root/AirBnB_clone_v4/api/v1'
+let g:netrw_dirhist_3='/root/AirBnB_clone_v4/api'
 let g:netrw_dirhist_2='/root/AirBnB_clone_v3/api/v1'
 let g:netrw_dirhist_1='/root/sorting_algorithms/0-O'
